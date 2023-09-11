@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int num1;
+	int num 1;
 	
 	int num 2;
 
-	for (num1 = 0; num1 < 9; num1++)
+	for (num 1 = 0; num 1 < 9; num 1++)
 	{
-		for (num2 = digit1 + 1; num2 < 10; num2++)
+		for (num 2 = num 1 + 1; num 2 < 10; num 2 ++)
 		{
-			putchar((num1 % 10) + '0');
-			putchar((num2 % 10) + '0');
+			putchar((num 1 % 10) + '0');
+			putchar((num 2 % 10) + '0');
 
-			if (num1 == 8 && num2 == 9)
+			if (num 1 == 8 && num 2 == 9)
 			{
 				continue;
 		}
