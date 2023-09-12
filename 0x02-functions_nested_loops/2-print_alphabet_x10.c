@@ -1,9 +1,9 @@
 # include "main.h"
 /**
-* print_alphabet_10x - p alpahbet
+* print_alphabet_x10 - p alpahbet
 * Return: void
 */
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	char alpha;
 	
