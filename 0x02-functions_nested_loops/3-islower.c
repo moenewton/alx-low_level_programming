@@ -5,10 +5,9 @@
 */
 int _islower(int x)
 {
-	if (x >=97  && x <= 122)
+	if (x >= 97  && x <= 122)
 	{
 		return (1);
 	}
-	return(0);
-}
-	
+	return (0);
+}	
