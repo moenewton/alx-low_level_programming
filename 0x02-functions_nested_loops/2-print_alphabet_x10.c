@@ -3,7 +3,7 @@
 * print_alphabet_10x - p alpahbet
 * Return: void
 */
-int print_alphabet_10x(void)
+void print_alphabet_10x(void)
 {
 	char alpha;
 	
@@ -17,7 +17,7 @@ int print_alphabet_10x(void)
 	{
 	_putchar(alpha);
 }
-	putchar('/n');
+	_putchar('/n');
 	x++;
 }
 }
