@@ -9,7 +9,7 @@ int _isupper(void)
 int x;        
 if (x >= 'A' && x <= 'Z');
 {
-putchar(x); 
+printf("%d",x); 
 }
 else
 {
