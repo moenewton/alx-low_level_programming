@@ -16,10 +16,10 @@ int main(void)
 	while (x % 2 == 0)
 	{
 		y = 2;
-		n /= 2;
+		x /= 2;
 	}
 
-	for (i = 3; i <= sqrt(n); i = i + 2)
+	for (i = 3; i <= sqrt(x); i = i + 2)
 	{
 		while (x % i == 0)
 		{
