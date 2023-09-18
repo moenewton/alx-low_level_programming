@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * puts2 - prints 
- * @str: string to print charc
+ * puts2 - prints one char 
+ * @str: string to print the chars f
  */
 void puts2(char *str)
 {
-	int i, j;
+	int x, y;
 
-	i = 0;
+	x = 0;
 
-	while (str[i] != '\0')
+	while (str[x] != '\0')
 	{
-		i++;
+		x++;
 	}
 
-	for (j = 0; i < i; j += 2)
+	for (y = 0; y < x; y += 2)
 	{
-		_putchar(str[j]);
+		_putchar(str[y]);
 	}
 
 	_putchar('\n');
