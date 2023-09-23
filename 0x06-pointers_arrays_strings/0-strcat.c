@@ -2,8 +2,8 @@
 
 /**
  * _strcat - concatenates 
- * @dest: string 1
- * @src: string 2
+ * @dest: string 
+ * @src: string 
  *
  * Return: a pointer 
  */
