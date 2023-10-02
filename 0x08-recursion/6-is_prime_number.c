@@ -1,19 +1,35 @@
 #include "main.h"
+
+int actual_prime(int n, int i);
 /**
- * _pow_recursion - x to the powr y
- * @x: raised number
- * @y: power
- * Return: output
+ * is_prime_number - determine if a number is prime or not
+ * @n: number 
+ * Return: 1 if prime, 0 if not prime
  */
-int _pow_recursion(int x, int y)
+int is_prime_number(int n)
 {
-	if (y < 0)
+	if (n <= 1)
 	{
-		return (-1);
+		return (0);
 	}
-	if (y == 0)
+	return (actual_prime(n, n - 1));
+}
+
+/**
+ * actual_prime - determines if a number is prime recursively
+ * @n: number 
+ * @i: iterator
+ * Return: 1 if prime, 0 if not
+ */
+int actual_prime(int n, int i)
+{
+	if (i == 1)
 	{
 		return (1);
 	}
-	return (x * _pow_recursion(x, y - 1));
+	if (n % i == 0 && i > 0)
+	{
+		return (0);
+	}
+	return (actual_prime(n, i - 1));
 }
