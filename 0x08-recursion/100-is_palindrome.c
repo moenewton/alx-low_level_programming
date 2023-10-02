@@ -28,3 +28,22 @@ int _strlen_recursion(char *s)
 	}
 	return (1 + _strlen_recursion(s + 1));
 }
+/**
+ * check_pal - checks recursively for palindrome
+ * @s: string
+ * @i: user
+ * @len: length
+ * Return: 1 or, 0 if not
+ */
+int check_pal(char *s, int i, int len)
+{
+	if (*(s + i) != *(s + len - 1))
+	{
+		return (0);
+	}
+	if (i >= len)
+	{
+		return (1);
+	}
+	return (check_pal(s, i + 1, len - 1));
+}
